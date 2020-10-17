@@ -1,0 +1,477 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Paramètres Generaux */
+html,body{
+	height:100%;
+}
+
+h2{
+	font-size:30px;
+	font-weight:bold;
+	font-family:"Rock Salt", serif;
+	padding-bottom:50px;
+}
+
+
+
+/*Header*/
+header{
+	background-image : url("../images/backgroundHeader.jpg");
+	background-size : cover;
+	background-position : 50%;
+	height : 85%;
+	border-bottom: 2px solid #D3D3D3;
+	margin-top:38px;
+}	
+
+
+#logo{
+	padding-top: 20px;
+	display : block;
+	margin : auto;
+	height: 45%;
+	width : auto;
+}
+
+
+
+
+/*Nav*/
+nav{
+	position:fixed;
+	width:100%;
+	background-color:white;
+	top : 0px;
+	left:0px;
+	border-bottom:1px solid grey;
+	z-index:10;
+}
+
+.menu_label, #navbar{
+	padding:0px 15px;
+	line-height:40px;
+	color:grey;
+}
+
+.menu_label:hover{
+	cursor: pointer;
+}
+
+.menu_label{
+	font-size:20px;
+	font-weight:bold;
+	z-index:20;
+}
+
+.menu_checkbox:not(:checked) + .menu_label:after{
+	content:" Combava";
+}
+
+.menu_checkbox:checked ~ .menu_label{
+	position:relative;
+	top:10px;
+	left:10px;
+	font-size:30px;
+	color : black;
+}
+
+#navbar{
+	float:right;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+}
+
+#navbar a{
+	font-weight:bold;
+	font-family:"Rock Salt", serif;
+	font-size: 18px;
+	text-decoration:none;
+	color:inherit;
+}
+
+#navbar li:not(:last-child){
+	display:none;
+	padding-right:30px;
+}
+
+
+
+#menu_cache{
+	position : fixed;
+	width:100%;
+	top : 0px;
+	left:0px;
+	max-width:0%;
+	overflow:hidden;
+	background-color:white;
+	height:100%;
+	transition-duration : 0.3s;
+	z-index:5;
+}
+
+#menu_cache h2{
+	text-align:center;
+}
+
+#menu_cache h2,#choix_menu > li{
+	line-height:70px;
+	margin-right:10px;
+	margin-left : 10px;
+	white-space:nowrap;
+	font-weight:bold;
+}
+
+#menu_cache h2,#choix_menu > li:not(:last-child){
+	border-bottom: 1px solid #D3D3D3;
+}
+
+#choix_menu > li{
+	font-size:20px;
+	padding-left:10px;
+}
+
+#menu_cache a{
+	color:black;
+	text-decoration:none;
+}
+
+.menu_checkbox{
+	position:fixed;
+	top:0px;
+	left:-50px;
+}
+
+
+.menu_checkbox:focus + .menu_label{
+	outline:black dotted 1px;
+}
+
+
+.menu_checkbox:checked ~ #menu_cache{
+	overflow : auto;
+	max-width:75%;
+	border-right:1px solid black;
+}
+
+
+.reseaux_sociaux{
+	display : flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:space-evenly;
+}
+
+/* Main */
+main{
+	background-color:#FAFAFA;
+}
+
+main>*{
+	padding-left : 5%;
+	padding-right : 5%;
+	padding-bottom : 50px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+main>*:not(:last-child){
+	padding-bottom : 110px;
+}
+
+main h3{
+	font-size:15px;
+	line-height:30px;
+	font-weight:bold;
+	font-family:"Rock Salt", serif;
+	margin-bottom:10px;
+}
+
+p{
+	font-size:20px;
+	line-height : 30px;
+}
+
+b{
+	font-weight:bold;
+	font-size : 25px;
+}
+
+
+
+/*Qui Sommes Nous*/
+#qui_sommes_nous{
+	padding-top:50px;
+}
+
+#qui_sommes_nous .corps{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+#qui_sommes_nous  img{
+	max-width:50%;
+	height : auto;
+	border-radius:50%;
+}
+
+#qui_sommes_nous p{
+	padding-top : 20px;
+}
+
+
+
+/* Evenements */
+#evenements{
+	background: url("../images/fond_jaune_haut.png") no-repeat top,
+				linear-gradient(to right, #fbe870, #fbe870) no-repeat center,
+				url("../images/fond_jaune_bas.png") no-repeat bottom;
+	background-size: 100% 4% , 100% 93% , 100% 4% ;
+}
+
+
+#liste_evenements img{
+	height:30px;
+	width:auto;
+}
+
+#evenements li{
+	margin-top:50px;
+}
+
+#evenements h3:before{
+	content:"Évènement ";
+}
+
+/*Je participe*/
+#je_participe {
+	margin-top:50px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+#formulaire {
+	margin-top:50px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+#je_participe form{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	margin-bottom:20px;
+}
+
+#je_participe form>* {
+	margin-bottom:10px;
+}
+
+.champs_a_remplir div{
+	margin-bottom: 10px;
+}
+
+.champs_a_remplir label {
+	display: block;
+	width : 100px;
+	float: left;
+	font-size : 20px;
+}
+
+.champs_a_remplir input{
+	height: 25px;
+}
+
+.champs_a_remplir p {
+	text-align:center;
+	font-size: 14px;
+	color: #999;
+}
+
+.validity{
+	position: absolute;
+	font-size: 30px;
+	padding-left: 5px;
+}
+
+.champs_a_remplir input:invalid+span:after {
+	content: '✖';
+}
+
+.champs_a_remplir input:valid+span:after {
+	content: '✓';
+}
+
+#event_select {
+	display:block;
+	padding: 5px 10px;
+	margin:auto;
+}
+
+#notif_cocher {
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.valider button {
+	padding: 0 20px;
+	line-height: 1.5;
+	font-size: 20px;
+}
+
+#image_formulaire{
+	height:100px;
+	width:100%;
+	overflow:hidden;
+}
+	
+	
+#image_formulaire img{
+	height:auto;
+	width:100%;
+	position:relative;	
+	bottom:150%;
+	filter:blur(1px);
+}
+
+
+footer{
+	padding-bottom:10px;
+	padding-top:10px;
+	background-color: #fbe870;
+}
+
+@media screen and (min-width: 768px){
+	#navbar li:nth-child(n){
+		display:block;
+	}
+	
+	.menu_checkbox:checked ~ #menu_cache{
+		max-width:25%;
+	}
+	
+	main>*{
+		padding-left : 15%;
+		padding-right : 15%;
+	}
+
+	/*Qui Sommes Nous*/
+	#qui_sommes_nous img{
+		max-width:25%;
+	}
+	
+	#qui_sommes_nous .corps{
+		flex-direction:row-reverse;
+		justify-content:space-between;
+	}
+	
+	/* Evenements */
+	#liste_evenements{
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		justify-content:space-evenly;
+	}
+	
+	#liste_evenements li {
+		width:45%;
+	}
+	
+	
+	/* je Participe */
+	
+	#formulaire{
+		flex-direction:row-reverse;
+	}
+	
+	
+	#image_formulaire{
+		height:400px;
+		width:150px;
+		margin-right:20px;
+	}
+	
+	
+	#image_formulaire img{
+		height:100%;
+		width:auto;
+		right:150%;
+		bottom:0%;
+	}
+		
+	
+	
+	/* Footer */
+	footer .reseaux_sociaux{
+		width:30%;
+		margin:auto;
+	}
+}
+
+
+
+
+
+
+/*Fonts*/
+@font-face{
+	font-family:"Rock Salt";
+	src: url('../fonts/RockSalt-Regular.ttf');
+}
+
+
+
+
