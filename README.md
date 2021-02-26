@@ -1,7 +1,7 @@
 # Combava
 ## Un site web pour une association
 
-<div style="text-align: right">
+<div style="text-align: justify">
   <p>
     <b>Contexte :</b> 
     Dans le cadre de ma première année dans ma formation de DUT Informatique, nous avons réalisé par binomes un projet pour un client fictif. Ce projet constituait en un         site web présentant une association du nom de Combava, une association de producteurs de citronnade.
