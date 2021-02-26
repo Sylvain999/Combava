@@ -5,6 +5,8 @@
   <b>Description :</b> 
   Dans le cadre de ma première année dans ma formation de DUT Informatique, nous avons réalisé par binomes un projet pour un client fictif. Ce projet constituait en un         site web présentant une association du nom de Combava, une association de producteurs de citronnade.
   </br>
+</p>
+<p>
   <b>Contexte :</b>
   Le contexte dans lequel nous étions plongé était le suivant : L'association Combava prévoyait de lancer un nombre défini d'évenements à trvers la France, dans lesquels elle proposerait aux participants de goûter aux citronnades servies par les producteurs.
   </br>
@@ -19,6 +21,8 @@
     <li>Plusieurs images particulières devaient être présentes </li>
    </ul>
 </p>
+
+</br>
 
 <p>Si vous souhaitez voir ce site : 
   <a href="https://sylvain999.github.io/Combava/Page_Combava/index.html">Cliquez ici pour voir le site</a>
