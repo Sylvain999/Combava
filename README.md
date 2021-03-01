@@ -34,7 +34,7 @@
   </br>
 
   <p>Si vous souhaitez voir ce site : 
-    <a href="https://sylvain999.github.io/Combava/Page_Combava/index.html">Cliquez ici pour voir le site</a>
+    <a href="https://sylvain999.github.io/Combava/Page_Combava/index.html">Cliquez ici</a>
    </p>
  
  </div>
